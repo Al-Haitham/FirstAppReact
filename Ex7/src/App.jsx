@@ -21,9 +21,22 @@ const App=()=>{
     setTasks(tasks.filter(task=>task.id!==id))
   }
 
+  const addTask=(title)=>{
+    const newTask={
+      id: tasks.length+1,
+      title,
+      completed:false
+    };
+    setTasks([...tasks,newTask]);
+  }
+  
   return(
     <main className="App">
       <h1>Todo list </h1>
+      <div className="add-task">
+        <input type="text" placeholder="Add a new task" />
+        <button className="btn btn-primary">Add</button>
+      </div>
       <TaskList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask} />
     </main>
   );
