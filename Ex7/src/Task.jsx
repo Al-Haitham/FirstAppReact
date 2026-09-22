@@ -8,5 +8,4 @@ function Task({ task, onToggle, onDelete }) {
     </div>
   );
 }
-
 export default Task;
