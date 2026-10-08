@@ -1,0 +1,24 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Yassine",
+      "score": -7
+    },
+    {
+      "id": 2,
+      "name": "Sara",
+      "score": 20
+    },
+    {
+      "id": 3,
+      "name": "Amine",
+      "score": 15
+    },
+    {
+      "name": "Bilal",
+      "score": 12,
+      "id": 4
+    }
+  ]
+}

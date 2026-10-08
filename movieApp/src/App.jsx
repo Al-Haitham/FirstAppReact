@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import MovieList from "./MovieList";
-import axios from "axios"
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -11,10 +10,10 @@ function App() {
 
   useEffect(() => {
     axios.get("http://localhost:3000/movies")
-      .then(response =>(
-      .setMovies(data)
-      .console.log(error))  ;
-  }, []);
+      .then((response) =>{setMovies(response.data);
+                          setFiltredMovies(response.data);
+      })
+    }, []);
 
   function handleLike(id) {
     if (likedMovies.includes(id)) {

@@ -1,0 +1,40 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "category": "Science-Fiction",
+      "image": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Dark Knight",
+      "category": "Action",
+      "image": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Interstellar",
+      "category": "Science-Fiction",
+      "image": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Hangover",
+      "category": "Comédie",
+      "image": "https://image.tmdb.org/t/p/w500/puzN09fJ4LSSC4ZNNbhJ2CglFru.jpg"
+    },
+    {
+      "id": 5,
+      "title": "John Wick",
+      "category": "Action",
+      "image": "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Superbad",
+      "category": "Comédie",
+      "image": "https://image.tmdb.org/t/p/w500/g1oJHbZU0Lr1gkHdBB4M1qH0XvA.jpg"
+    }
+  ]
+}   
