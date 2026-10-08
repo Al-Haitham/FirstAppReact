@@ -8,7 +8,7 @@ import {initialState, CartReducer} from "./CartReducer";
 const [state, dispatch] = useReducer(CartReducer, initialState);
 
 useEffect(()=>{
-  fetch("http://localhost:3000/produits").then((res)=>res.json())
+  fetch("http://localhost:3000").then((res)=>res.json())
                                          .then((data)=>{
                                             dispatch({type:"SET_PRODUCTS",payload:data})
                                          })

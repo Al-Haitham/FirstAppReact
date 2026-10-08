@@ -1,0 +1,34 @@
+{
+  "produits":[
+  {
+    "nom": "Laptop HP Pavilion",
+    "prix": 899.99,
+    "qte": 15,
+    "image": "https://example.com/images/laptop-hp.jpg"
+  },
+  {
+    "nom": "Souris Sans Fil Logitech",
+    "prix": 29.50,
+    "qte": 150,
+    "image": "https://example.com/images/souris-logitech.jpg"
+  },
+  {
+    "nom": "Clavier Mécanique Corsair",
+    "prix": 120.00,
+    "qte": 45,
+    "image": "https://example.com/images/clavier-corsair.jpg"
+  },
+  {
+    "nom": "Écran Samsung 27\"",
+    "prix": 249.99,
+    "qte": 30,
+    "image": "https://example.com/images/ecran-samsung.jpg"
+  },
+  {
+    "nom": "Casque Audio Sony WH-1000XM5",
+    "prix": 349.00,
+    "qte": 20,
+    "image": "https://example.com/images/casque-sony.jpg"
+  }
+]
+}

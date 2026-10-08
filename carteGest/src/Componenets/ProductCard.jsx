@@ -7,8 +7,11 @@ const ProductCard=({produit,dispatch})=>{
                     <h5 className="card-title">{produit.nom}</h5>
                     <p className="card-text">{produit.description}</p>
                     <p className="card-price">${produit.prix.toFixed(2)}</p>
+                    <button type="button" onClick={()=>dispatch({type:"ADD_TO_CART",payload:produit})} className="btn btn-primary btn-sm">Add to Cart</button>
                 </div>
             </div>
         </div>
     )
 }
+
+export default ProductCard;
