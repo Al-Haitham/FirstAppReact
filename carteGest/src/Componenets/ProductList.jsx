@@ -1,14 +1,18 @@
 import ProductCard from "./ProductCard";
 
-const ProductList=({produits,dispatch})=>{
+const ProductList=({produits=[],dispatch})=>{
     return (
-        <div className="container">
-            <div className="row">
+        
+            <div className="d-flex flex-wrap row">
                 {
-                    produits.map((p,pos)=><ProductCard key={pos} produits={p} dispatch={dispatch}/>)
+                    produits.map((p,pos)=>(
+                        <div className="mb-2">
+                        <ProductCard key={pos} produits={p} dispatch={dispatch}/>
+                        </div>)
+                    )
                 }
             </div>
-        </div>
+        
     )
 }
 

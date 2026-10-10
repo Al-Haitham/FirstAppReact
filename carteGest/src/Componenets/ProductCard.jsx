@@ -1,4 +1,4 @@
-const ProductCard=({produit,dispatch})=>{
+const ProductCard=({produits:produit,dispatch})=>{
     return (
         <div className="col-md-4">
             <div className="card h-100">

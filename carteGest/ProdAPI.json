@@ -1,34 +1,46 @@
 {
   "produits":[
-  {
-    "nom": "Laptop HP Pavilion",
-    "prix": 899.99,
-    "qte": 15,
-    "image": "https://example.com/images/laptop-hp.jpg"
-  },
-  {
-    "nom": "Souris Sans Fil Logitech",
-    "prix": 29.50,
-    "qte": 150,
-    "image": "https://example.com/images/souris-logitech.jpg"
-  },
-  {
-    "nom": "Clavier Mécanique Corsair",
-    "prix": 120.00,
-    "qte": 45,
-    "image": "https://example.com/images/clavier-corsair.jpg"
-  },
-  {
-    "nom": "Écran Samsung 27\"",
-    "prix": 249.99,
-    "qte": 30,
-    "image": "https://example.com/images/ecran-samsung.jpg"
-  },
-  {
-    "nom": "Casque Audio Sony WH-1000XM5",
-    "prix": 349.00,
-    "qte": 20,
-    "image": "https://example.com/images/casque-sony.jpg"
-  }
-]
+    {
+      "id": 1,
+      "nom": "Classic Denim Jacket",
+      "description": "Timeless casual denim jacket featuring premium cotton blend with a comfortable fit.",
+      "prix": 59.99,
+      "image": "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 2,
+      "nom": "Minimalist Leather Sneakers",
+      "description": "Clean and modern leather sneakers suitable for everyday wear and sleek outfits.",
+      "prix": 89.99,
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 3,
+      "nom": "Wireless Noise-Canceling Headphones",
+      "description": "High-fidelity audio with active noise cancellation and long battery life.",
+      "prix": 149.99,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 4,
+      "nom": "Vintage Leather Backpack",
+      "description": "Durable handcrafted leather backpack with multiple compartments for daily travel.",
+      "prix": 79.50,
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 5,
+      "nom": "Smart Minimalist Watch",
+      "description": "Elegant wristwatch with modern smart tracking capabilities and a stainless steel band.",
+      "prix": 120.00,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 6,
+      "nom": "Aromatic Ceramic Coffee Mug",
+      "description": "Handmade ceramic mug designed for brewing coffee and tea with optimal heat retention.",
+      "prix": 18.00,
+      "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+    }
+  ]
 }

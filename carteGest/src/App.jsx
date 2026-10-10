@@ -1,28 +1,24 @@
 import { useState,useReducer, useEffect} from "react"
 import {BrowserRouter,Routes,Route} from "react-router-dom"
-import ProductList from "./Components/ProdcutList";
-import Cart from "./Components/Cart";
+import ProductList from "./Componenets/ProductList";
+import Cart from "./Componenets/Cart";
 import Navbar from "./Pages/Navbar";
 import {initialState, CartReducer} from "./CartReducer";
-
-const [state, dispatch] = useReducer(CartReducer, initialState);
-
-useEffect(()=>{
-  fetch("http://localhost:3000").then((res)=>res.json())
-                                         .then((data)=>{
-                                            dispatch({type:"SET_PRODUCTS",payload:data})
-                                         })
-},[])
+import axios from 'axios'
 
 const App=()=>{
+  const [produits, setProduits]=useState([])
+  useEffect(()=>{
+    axios.get("http://localhost:3000/produits").then((Response)=>setProduits(Response.data))
+  },[])
   const [state,dispatch]=useReducer(CartReducer,initialState);
   return(
     <BrowserRouter>
-      <Navbar/>
+      <Navbar productsCart={state.cart} />
       <Routes>
-        <Route path="/" element={<ProductList displatch={dispatch} produits={produits}/>}/>
+        <Route path="/" element={<ProductList dispatch={dispatch} produits={produits}/>}/>
         <Route path="/products" element={<ProductList dispatch={dispatch} produits={produits}/>}/>
-        <Route path="/cart" element={<Cart dispatch={dispatch} productCart={statecart}/>}/>
+        <Route path="/cart" element={<Cart dispatch={dispatch} productCart={state.cart}/>}/>
       </Routes>
     </BrowserRouter>
   )
